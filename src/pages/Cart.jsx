@@ -42,15 +42,13 @@ function Cart() {
 
 function Quantity({ product }) {
   return (
-    <>
-      <div className=" cart-quantity-style">
-        <p className="quantity-padding">Product name: {product.product.name}</p>
-        <p className="quantity-padding">Quantity: {product.quantity}</p>
-        <p className="quantity-padding">
-          Price: Rs {product.product.price} per piece
-        </p>
-      </div>
-    </>
+    <div className=" cart-quantity-style">
+      <p className="quantity-padding">Product name: {product.product.name}</p>
+      <p className="quantity-padding">Quantity: {product.quantity}</p>
+      <p className="quantity-padding">
+        Price: Rs {product.product.price} per piece
+      </p>
+    </div>
   );
 }
 
