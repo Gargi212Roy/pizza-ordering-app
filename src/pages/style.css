@@ -159,7 +159,38 @@
   display: none;
 }
 
+.flex-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.cart-quantity-style {
+  background-color: aliceblue;
+  color: black;
+  font-size: 20px;
+  height: 120px;
+  width: 380px;
+  padding: 8px;
+}
+
+.quantity-padding {
+  display: block;
+  margin-top: 10px;
+}
+
 @media (min-width: 375px) and (max-width: 550px) {
+  .flex-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .cart-quantity-style {
+    font-size: 18px;
+
+    width: 350px;
+  }
   .flex-filter {
     display: flex;
     flex-direction: row;
@@ -221,6 +252,17 @@
 }
 
 @media (min-width: 270px) and (max-width: 375px) {
+  .flex-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .cart-quantity-style {
+    font-size: 15px;
+    height: 100px;
+    width: 250px;
+    padding: 8px;
+  }
   .flex-card {
     box-shadow: none;
     flex-direction: column;
