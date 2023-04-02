@@ -155,6 +155,10 @@
   align-items: center;
 }
 
+.no-image {
+  display: none;
+}
+
 @media (min-width: 375px) and (max-width: 550px) {
   .flex-filter {
     display: flex;

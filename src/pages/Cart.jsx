@@ -8,18 +8,18 @@ import "./style.css";
 function Cart() {
   const cart = useSelector((state) => state);
 
-  console.log("CartData", cart);
+  console.log("CartData", cart.cart);
 
   return (
     <>
       <NavBar />
-      <div className="image">
+      <div className={cart.cart.length === 0 ? "image" : "no-image"}>
         <img src={EmptyCartImage} alt="Empty Card" className="img-size" />
-        {/* <div className="container">
-          {cart.map((product) => (
-            <ProductCard product={product} key={product.id} />
-          ))}
-        </div> */}
+      </div>
+      <div className="container">
+        {cart.cart.map((product) => (
+          <ProductCard product={product.product} key={product.id} />
+        ))}
       </div>
     </>
   );
